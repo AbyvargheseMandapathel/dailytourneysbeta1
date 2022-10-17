@@ -18,6 +18,8 @@ django-dotenv==1.4.2
 django-embed-video==1.4.7
 django-environ==0.9.0
 django-js-asset==2.0.0
+django-phonenumbers==1.0.1
+django-phonenumber-field==7.0.0
 django-social-share==2.3.0
 django-taggit==3.0.0
 django-utils-six==2.0
@@ -38,7 +40,6 @@ packaging==20.9
 parso==0.5.2
 pastel==0.2.1
 pexpect==4.8.0
-django-phonenumber-field==7.0.0
 Pillow==9.2.0
 pipreqs-amasad==0.4.10
 pkginfo==1.7.1
