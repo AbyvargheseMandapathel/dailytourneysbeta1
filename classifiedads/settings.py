@@ -29,7 +29,7 @@ SECRET_KEY = '+$#4m3n(oz_n#ip-3bpl5g5ew7)v$gq66rwhgz(dune&0(2!)g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['dtbackup.abyvarghese2000.repl.co']
 
 
 # Application definition
@@ -93,23 +93,23 @@ WSGI_APPLICATION = 'classifiedads.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 """PostgreSQL DB"""
-# DATABASES = {
-#     'default': {
-#         'NAME': 'ClassifiedAdsDB',
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'USER': 'postgres',
-#         'PASSWORD': 'admin123',
-#         'HOST': 'localhost',
-#     }
-# }
+DATABASES = {
+     'default': {
+         'NAME': env('DBNAME'),
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'USER': env('DBUSER'),
+         'PASSWORD': env('DBPASS'),
+         'HOST': env('DBHOST'),
+     }
+ }
 
 """SQLite DB"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
 
 
