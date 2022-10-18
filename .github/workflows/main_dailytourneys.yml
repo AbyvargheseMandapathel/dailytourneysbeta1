@@ -36,9 +36,6 @@ jobs:
       - name: migrate
         run: python manage.py migrate
         
-      - name: runserver
-        run: python manage.py runserver
-        
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
@@ -71,3 +68,6 @@ jobs:
           app-name: 'dailytourneys'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B6D35030D3A43289B4E93BB916A9C6A }}
+      
+      - name: runserver
+        run: python manage.py runserver
