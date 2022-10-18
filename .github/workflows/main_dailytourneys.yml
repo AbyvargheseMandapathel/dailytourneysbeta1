@@ -36,6 +36,9 @@ jobs:
       - name: migrate
         run: python manage.py migrate
         
+      - name: runserver
+        run: python manage.py runserver
+        
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
