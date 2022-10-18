@@ -29,7 +29,7 @@ SECRET_KEY = '+$#4m3n(oz_n#ip-3bpl5g5ew7)v$gq66rwhgz(dune&0(2!)g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://dailytourneys.azurewebsites.net']
 
 
 # Application definition
