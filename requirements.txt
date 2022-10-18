@@ -56,6 +56,7 @@ pyparsing==3.0.5
 python-jsonrpc-server==0.3.2
 python-language-server==0.31.10
 python-decouple==3.6
+python-dotenv==0.21.0
 pytz==2022.1
 requests==2.26.0
 requests-toolbelt==0.9.1
