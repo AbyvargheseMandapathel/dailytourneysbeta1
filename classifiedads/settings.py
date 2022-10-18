@@ -95,11 +95,12 @@ WSGI_APPLICATION = 'classifiedads.wsgi.application'
 """PostgreSQL DB"""
 DATABASES = {
      'default': {
-         'NAME': env('DBNAME'),
          'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME': env('DBNAME'),
          'USER': env('DBUSER'),
          'PASSWORD': env('DBPASS'),
          'HOST': env('DBHOST'),
+         'PORT':'5432',
      }
  }
 
